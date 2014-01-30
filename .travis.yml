@@ -9,6 +9,10 @@ matrix:
   allow_failures:
     - php: nightly
 
+branches:
+  except:
+    - '2-architecture-changes'
+
 cache:
   directories:
     - $HOME/.composer/cache
