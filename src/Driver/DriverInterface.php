@@ -103,6 +103,16 @@ interface DriverInterface
      * @throws UnsupportedDriverActionException When operation not supported by the driver
      * @throws DriverException                  When the operation cannot be done
      */
+    public function post($url, $parameters = array());
+
+    /**
+     * Visit specified URL.
+     *
+     * @param string $url url of the page
+     *
+     * @throws UnsupportedDriverActionException When operation not supported by the driver
+     * @throws DriverException                  When the operation cannot be done
+     */
     public function visit($url);
 
     /**

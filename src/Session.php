@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Behat\Mink;
+namespace behat\Mink;
 
 use Behat\Mink\Driver\DriverInterface;
 use Behat\Mink\Selector\SelectorsHandler;
@@ -131,6 +131,16 @@ class Session
     public function getSelectorsHandler()
     {
         return $this->selectorsHandler;
+    }
+
+    /**
+     * Visit specified URL.
+     *
+     * @param string $url url of the page
+     */
+    public function post($url, $parameters = array())
+    {
+        $this->driver->post($url, $parameters);
     }
 
     /**
