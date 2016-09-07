@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Kietlieng\Mink;
+namespace Behat\Mink;
 
 /**
  * Mink sessions manager.
