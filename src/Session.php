@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace behat\Mink;
+namespace Behat\Mink;
 
 use Behat\Mink\Driver\DriverInterface;
 use Behat\Mink\Selector\SelectorsHandler;
